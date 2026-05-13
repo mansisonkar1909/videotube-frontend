@@ -3,7 +3,7 @@ import store from "../store/store.js";
 import { logout } from "../store/slices/authSlice.js";
 
 const axiosInstance = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL || "https://videotube-backend-ehvr.onrender.com",
+    baseURL: import.meta.env.VITE_API_BASE_URL || "https://videotube-backend-ehvr.onrender.com/api/v1",
     withCredentials: true
 });
 

@@ -6,6 +6,7 @@ import axiosInstance from "../utils/axios.js";
 
 function Upload() {
     const navigate = useNavigate();
+    const [sidebarOpen, setSidebarOpen] = useState(false) 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [uploadProgress, setUploadProgress] = useState(0);

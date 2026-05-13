@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function Sidebar({ isOpen }) {
-    const { user, theme } = useSelector((state) => state.auth);
-    // ✅ No useState needed here - isOpen comes from parent page
+    const [sidebarOpen, setSidebarOpen] = useState(false)
+    
 
     const menuItems = [
         { icon: "🏠", label: "Home", path: "/" },
